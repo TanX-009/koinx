@@ -9,7 +9,7 @@ export default function Highlight({
   return (
     <div
       className={styles.highlight}
-      style={{ backgroundColor: background, color: color }}
+      style={{ background: background, color: color }}
     >
       {children}
     </div>

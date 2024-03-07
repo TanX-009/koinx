@@ -34,9 +34,11 @@
   --txt-dark: #000;
   --txt-mid: #807e81;
 
-  --shadow: #1026490f;
+  --shadow: #1026494f;
 
-  --hi-c-grad-1: linear-gradient(81.62deg, #2870ea 8.72%, #1b4aef 85.01%);
+  --grad-1: linear-gradient(135deg, #79f1a4 0%, #0e5cad 100%);
+  --grad-2: linear-gradient(135.73deg, #ff9865 0%, #ef3031 110.55%);
+  --grad-3: linear-gradient(81.62deg, #2870ea 8.72%, #1b4aef 85.01%);
   --high-low-grad: linear-gradient(
     90deg,
     #ff4949 0%,

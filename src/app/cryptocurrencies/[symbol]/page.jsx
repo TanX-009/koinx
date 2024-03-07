@@ -11,6 +11,7 @@ import styles from "./styles.module.css";
 import SymbolSummary from "./components/SymbolSummary";
 import PerformanceSection from "./components/PerformanceSection";
 import SentimentSection from "./components/SentimentSection";
+import AboutSymbol from "./components/AboutSymbol";
 
 export default function SymbolPage() {
   const params = useParams();
@@ -51,6 +52,7 @@ export default function SymbolPage() {
           <SymbolSummary geckoData={geckoData} />
           <PerformanceSection geckoData={geckoData} />
           <SentimentSection />
+          <AboutSymbol geckoData={geckoData} />
           <div></div>
         </div>
 

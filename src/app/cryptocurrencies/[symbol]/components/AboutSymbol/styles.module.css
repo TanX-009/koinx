@@ -1,0 +1,9 @@
+.aboutSymbol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.aboutSymbol > p {
+  font-size: var(--step--1);
+}

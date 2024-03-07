@@ -31,7 +31,7 @@
 
   color: var(--txt-dark);
   background: var(--txt-light);
-  box-shadow: 0 0 var(--space-5xs) 0rem gray;
+  box-shadow: 0 0 var(--space-5xs) 0rem var(--shadow);
   border-radius: 100%;
   display: flex;
   justify-content: center;
