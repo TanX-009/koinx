@@ -1,0 +1,29 @@
+.infoCard {
+  padding: var(--space-2xs) 0;
+  height: 9rem;
+  aspect-ratio: 7/3;
+  overflow-y: auto;
+
+  display: flex;
+  gap: var(--space-2xs);
+}
+
+.icon {
+  padding: var(--space-2xs);
+  height: fit-content;
+  aspect-ratio: 1/1;
+
+  border-radius: 50%;
+
+  color: var(--txt-light);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5xs);
+}
+
+.info > p {
+  font-size: var(--step--2);
+}

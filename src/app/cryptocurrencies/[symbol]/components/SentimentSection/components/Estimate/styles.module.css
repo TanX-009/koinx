@@ -1,0 +1,58 @@
+.estimate {
+  padding: var(--space-s);
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  flex-wrap: wrap;
+}
+
+.buyCircle {
+  padding: var(--space-m);
+
+  font-size: var(--step-4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+
+  background: var(--green-light);
+  color: var(--green-dark);
+}
+
+.buyCircle > span {
+  font-size: var(--step-2);
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.barContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.bar {
+  width: 0;
+  height: var(--space-2xs);
+  border-radius: var(--radius);
+}
+
+.green {
+  background: var(--green-dark);
+}
+
+.grey {
+  background: var(--grey-dark);
+}
+
+.red {
+  background: var(--red-dark);
+}

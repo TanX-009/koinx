@@ -6,6 +6,7 @@ import styles from "./styles.module.css";
 import DetailItem from "./components/DetailItem";
 import { IoIosInformationCircle } from "react-icons/io";
 import HighLow from "@/components/misc/HighLow";
+import Sub3Title from "@/components/ui/Sub3Title";
 
 export default function PerformanceSection({ geckoData }) {
   const tabs = [
@@ -86,6 +87,7 @@ export default function PerformanceSection({ geckoData }) {
             highRaw={geckoData.market_data.high_24h.usd || 0}
             current={parseCurrency(
               geckoData.market_data.current_price.usd || "",
+              "USD",
             )}
             currentRaw={geckoData.market_data.current_price.usd || ""}
           />
@@ -100,9 +102,9 @@ export default function PerformanceSection({ geckoData }) {
             )}
           />
 
-          <h3 className={styles.fundamentalsTitle}>
+          <Sub3Title>
             Fundamentals <IoIosInformationCircle />
-          </h3>
+          </Sub3Title>
           <div className={styles.fundamentals}>
             <div>
               {leftTable.map((item, index) => {

@@ -1,0 +1,67 @@
+.scroller {
+  width: 100%;
+  position: relative;
+}
+
+.itemsContainer {
+  padding: var(--space-2xs);
+  overflow-x: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-s);
+
+  /* hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.itemsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.left,
+.right {
+  width: var(--space-m);
+  height: var(--space-m);
+  font-size: var(--step-1);
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+
+  color: var(--txt-dark);
+  background: var(--txt-light);
+  box-shadow: 0 0 var(--space-5xs) 0rem gray;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left:active,
+.right:active {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.left:hover,
+.right:hover {
+  scale: 1.2;
+}
+.left {
+  left: -1%;
+}
+.right {
+  right: -1%;
+}
+
+.disable {
+  display: none;
+}
+
+/* 640px / 16px = 40em */
+@media (max-width: 40em) {
+  .left,
+  .right {
+    display: none;
+  }
+}
