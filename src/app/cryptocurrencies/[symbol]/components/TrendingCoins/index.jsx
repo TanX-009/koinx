@@ -11,7 +11,12 @@ function TrendingCoin({ image, name, symbol, value, id }) {
     <div className={styles.trendingCoin}>
       <div className={styles.symbolContainer}>
         <div className={styles.imgContainer}>
-          <Image src={image} alt={name} fill />
+          <Image
+            src={image}
+            alt={name}
+            fill
+            sizes="(max-width: 1920px) 7.0312vw, (max-width: 1280px) 10.5469vw, (max-width: 540px) 24.0741vw, (max-width: 800px) 16.2500vw, (max-width: 1024px) 13.1836vw, 11.9518vw"
+          />
         </div>
         <Link.LowContrast href={"/cryptocurrencies/" + id}>
           {name} ({symbol})

@@ -5,12 +5,15 @@ import Button from "../clickables/Button";
 import KoinXLogo from "../misc/KoinXLogo";
 import NavLinks from "./components/NavLinks";
 import Hamburger from "./components/Hamburger";
+import Link from "../clickables/Link";
 
 export default function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.navbarContainer}>
-        <KoinXLogo.TypeA />
+        <Link.LowContrast href={"/"}>
+          <KoinXLogo.TypeA />
+        </Link.LowContrast>
         <NavLinks />
         <Hamburger />
       </div>

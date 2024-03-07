@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
-import Location from "./components/Location";
-import Navbar from "@/components/Navbar";
 import { usePathname } from "next/navigation";
+import Location from "./components/Location";
 
 export default function MainLayout({ children }) {
   const pathname = usePathname();
@@ -11,7 +9,6 @@ export default function MainLayout({ children }) {
 
   return (
     <>
-      <Navbar />
       <Location location={pathNest} />
       {children}
     </>
