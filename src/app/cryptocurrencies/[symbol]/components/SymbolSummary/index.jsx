@@ -8,7 +8,7 @@ import Change from "@/components/ui/Change";
 import Tabs from "@/components/ui/Tabs";
 import TradingViewWidget from "./components/TradingViewWidget";
 
-export default function AboutSymbol({ geckoData }) {
+export default function SymbolSummary({ geckoData }) {
   const [dateRange, setDateRange] = useState("5D");
   const range = ["1D", "5D", "1M", "3M", "6M", "1Y", "5Y", "ALL"];
 

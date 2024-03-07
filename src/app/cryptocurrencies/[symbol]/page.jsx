@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import GetStarted from "./components/GetStarted";
 import TrendingCoins from "./components/TrendingCoins";
 import styles from "./styles.module.css";
-import AboutSymbol from "./components/AboutSymbol";
+import SymbolSummary from "./components/SymbolSummary";
 import PerformanceSection from "./components/PerformanceSection";
 import SentimentSection from "./components/SentimentSection";
 
@@ -48,7 +48,7 @@ export default function SymbolPage() {
     <MaxWidthContainer>
       <div className={styles.symbolPage}>
         <div className={styles.main}>
-          <AboutSymbol geckoData={geckoData} />
+          <SymbolSummary geckoData={geckoData} />
           <PerformanceSection geckoData={geckoData} />
           <SentimentSection />
           <div></div>
