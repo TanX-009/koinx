@@ -1,0 +1,27 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5xs);
+}
+
+.active,
+.inactive {
+  padding: var(--space-6xs) var(--space-4xs);
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+}
+
+.active {
+  background: var(--pri-light);
+  color: var(--pri-dark);
+}
+
+.inactive {
+  background: none;
+  color: var(--txt-dark);
+}
+
+.inactive:hover {
+  background: var(--grey-light);
+}

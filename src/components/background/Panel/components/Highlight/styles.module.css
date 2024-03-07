@@ -1,0 +1,4 @@
+.highlight {
+  padding: var(--space-xs);
+  border-radius: var(--radius);
+}

@@ -13,7 +13,7 @@
   outline: none;
   border: none;
 
-  background: var(--hi-c-grad-1);
-  color: var(--txt-light);
+  background: var(--bg-light);
+  color: var(--txt-dark);
   cursor: pointer;
 }

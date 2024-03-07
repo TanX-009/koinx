@@ -16,7 +16,18 @@
   --sen: #dce8e6;
   --sep: #6184ff;
 
+  --pri-dark: #0052fe;
+  --pri-light: #e2ecfe;
+
+  --green-light: #ebf9f4;
+  --green-dark: #14b079;
+  --red-light: #fdebe8;
+  --red-dark: #e96975;
+  --grey-light: #dee1e6;
+
   --bg-light: #fff;
+  --bg-light-a: #e4e3e7;
+  --bg-hl: #768396;
 
   --txt-light: #fff;
   --txt-dark: #000;
@@ -68,7 +79,7 @@
   --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vi, 3.0518rem);
   --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vi, 3.8147rem);
 
-  --radius: var(--space-4xs-3xs);
+  --radius: var(--space-5xs-4xs);
 }
 
 /* box-sizing and font sizing */
@@ -93,6 +104,7 @@ body {
   height: 100vh;
   margin: 0;
   overflow-x: hidden;
+  background: var(--bg-light-a);
 }
 
 body > .rootContainer {

@@ -1,0 +1,12 @@
+.symbolPage {
+  display: flex;
+  gap: var(--space-s);
+}
+
+.main {
+  width: calc(75% - var(--space-s));
+}
+
+.promo {
+  width: 25%;
+}

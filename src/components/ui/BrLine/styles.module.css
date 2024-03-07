@@ -1,0 +1,7 @@
+.brLine {
+  width: 100%;
+  height: 0;
+
+  border: 0.08rem solid var(--grey-light);
+  border-radius: var(--radius);
+}

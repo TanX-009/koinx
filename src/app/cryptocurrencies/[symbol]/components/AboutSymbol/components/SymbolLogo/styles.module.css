@@ -1,0 +1,8 @@
+.symbolLogo {
+  height: var(--space-m);
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.symbolLogo > img {
+  object-fit: contain;
+}

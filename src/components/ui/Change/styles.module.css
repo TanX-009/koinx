@@ -1,0 +1,21 @@
+.high,
+.low {
+  width: fit-content;
+  padding: var(--space-4xs);
+
+  border-radius: var(--radius);
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-6xs);
+}
+
+.high {
+  background: var(--green-light);
+  color: var(--green-dark);
+}
+
+.low {
+  background: var(--red-light);
+  color: var(--red-dark);
+}

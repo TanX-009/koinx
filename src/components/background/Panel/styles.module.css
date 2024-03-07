@@ -1,0 +1,5 @@
+.panel {
+  padding: var(--space-xs);
+  border-radius: var(--radius);
+  background: var(--bg-light);
+}
