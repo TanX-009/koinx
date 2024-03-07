@@ -1,0 +1,16 @@
+.tokenomics {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.imgContainer {
+  height: 9rem;
+  width: fit-content;
+  aspect-ratio: 417/179;
+  position: relative;
+}
+
+.imgContainer > img {
+  object-fit: contain;
+}
