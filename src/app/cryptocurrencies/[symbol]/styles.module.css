@@ -10,3 +10,15 @@
 .promo {
   width: 25%;
 }
+
+@media (max-width: 800px) {
+  .symbolPage {
+    flex-direction: column;
+  }
+  .main {
+    width: 100%;
+  }
+  .promo {
+    width: 100%;
+  }
+}
