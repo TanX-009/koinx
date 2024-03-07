@@ -27,8 +27,11 @@ export default function YouMayAlsoLike() {
         <h3>You May Also Like</h3>
         <Scroller>
           {geckoTrending.coins.map((coin, key) => (
-            <Link.LowContrast href={`/cryptocurrencies/${coin.item.id}`}>
-              <TradingViewWidgetMini key={key} symbol={coin.item.symbol} />
+            <Link.LowContrast
+              key={key}
+              href={`/cryptocurrencies/${coin.item.id}`}
+            >
+              <TradingViewWidgetMini symbol={coin.item.symbol} />
             </Link.LowContrast>
           ))}
         </Scroller>

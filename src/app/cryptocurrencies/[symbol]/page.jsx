@@ -64,6 +64,7 @@ export default function SymbolPage() {
         <div className={styles.promo}>
           <GetStarted />
           <TrendingCoins />
+          <div></div>
         </div>
       </div>
       <YouMayAlsoLike />

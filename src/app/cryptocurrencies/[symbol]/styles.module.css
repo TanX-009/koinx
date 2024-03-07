@@ -19,7 +19,7 @@
 }
 
 .space {
-  height: var(--space-m);
+  height: var(--space-2xs);
 }
 
 @media (max-width: 800px) {

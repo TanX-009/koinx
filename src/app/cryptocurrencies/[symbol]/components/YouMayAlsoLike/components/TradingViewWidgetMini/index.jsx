@@ -3,7 +3,6 @@ import styles from "./styles.module.css";
 
 function TradingViewWidgetMini({ symbol }) {
   const container = useRef();
-  console.log(symbol);
 
   const params = `{
   "symbol": "${symbol}",
