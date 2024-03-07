@@ -1,0 +1,26 @@
+.trendingCoins {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.trendingCoin {
+  display: flex;
+  justify-content: space-between;
+}
+
+.symbolContainer {
+  font-size: var(--step--2);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-5xs);
+}
+
+.imgContainer {
+  height: var(--step-2);
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+}

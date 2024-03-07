@@ -57,11 +57,3 @@
 .disable {
   display: none;
 }
-
-/* 640px / 16px = 40em */
-@media (max-width: 40em) {
-  .left,
-  .right {
-    display: none;
-  }
-}

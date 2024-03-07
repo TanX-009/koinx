@@ -1,6 +1,7 @@
 .high,
 .low {
   width: fit-content;
+  height: fit-content;
   padding: var(--space-4xs);
 
   border-radius: var(--radius);
