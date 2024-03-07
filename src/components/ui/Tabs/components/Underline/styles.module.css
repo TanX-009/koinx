@@ -4,6 +4,15 @@
   gap: var(--space-4xs);
 
   border-bottom: 0.1rem solid var(--grey-light);
+
+  overflow-x: auto;
+
+  /* hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .active,

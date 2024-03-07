@@ -70,7 +70,13 @@ export default function PerformanceSection({ geckoData }) {
 
   return (
     <>
-      <Tabs.Underline current={currentTab} setter={setCurrentTab} tabs={tabs} />
+      <div className={styles.tabsContainer}>
+        <Tabs.Underline
+          current={currentTab}
+          setter={setCurrentTab}
+          tabs={tabs}
+        />
+      </div>
       {currentTab === "Overview" ? (
         <Panel>
           <h3>{currentTab}</h3>

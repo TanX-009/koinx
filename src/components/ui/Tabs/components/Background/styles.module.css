@@ -2,6 +2,15 @@
   display: flex;
   align-items: center;
   gap: var(--space-5xs);
+
+  overflow-x: auto;
+
+  /* hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .active,
