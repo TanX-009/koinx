@@ -19,7 +19,7 @@ function TradingViewWidget({ symbol, range }) {
 
   const params = `{
     "autosize": true,
-    "symbol": "BITSTAMP:BTCUSD",
+    "symbol": "${symbol.toUpperCase()}",
     "timezone": "Etc/UTC",
     "theme": "light",
     "style": "3",

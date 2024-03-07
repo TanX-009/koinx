@@ -52,7 +52,7 @@ export default function SymbolSummary({ geckoData }) {
             tabs={range}
           />
         </div>
-        <TradingViewWidget range={dateRange} />
+        <TradingViewWidget range={dateRange} symbol={geckoData.symbol} />
       </div>
     </Panel>
   );
