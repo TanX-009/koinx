@@ -1,0 +1,11 @@
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+}
+
+@media (max-width: 800px) {
+  .navLinks {
+    display: none;
+  }
+}

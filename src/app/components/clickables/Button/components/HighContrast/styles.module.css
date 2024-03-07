@@ -1,0 +1,14 @@
+.button {
+  padding: var(--space-3xs) var(--space-m);
+
+  font-size: inherit;
+  font-weight: 600;
+
+  border-radius: var(--radius);
+  outline: none;
+  border: none;
+
+  background: var(--hi-c-grad-1);
+  color: var(--txt-light);
+  cursor: pointer;
+}

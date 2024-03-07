@@ -1,0 +1,7 @@
+.link {
+  font-size: inherit;
+  font-weight: 500;
+  text-decoration: none;
+
+  color: var(--txt-dark);
+}

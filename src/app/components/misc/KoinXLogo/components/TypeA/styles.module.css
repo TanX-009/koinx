@@ -1,0 +1,16 @@
+.logo {
+  height: var(--space-m);
+  aspect-ratio: 4/1;
+  position: relative;
+}
+
+.logo.s {
+  height: var(--space-s);
+}
+.logo.m {
+  height: var(--space-m);
+}
+
+.logo > img {
+  height: 100%;
+}

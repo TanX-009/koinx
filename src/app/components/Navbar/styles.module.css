@@ -1,0 +1,15 @@
+.navbar {
+  width: 100%;
+  box-shadow: 0px 0px 8px 0px var(--shadow);
+}
+
+.navbarContainer {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-s);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
