@@ -14,6 +14,7 @@ import SentimentSection from "./components/SentimentSection";
 import AboutSymbol from "./components/AboutSymbol";
 import Tokenomics from "./components/Tokenomics";
 import Teams from "./components/Teams";
+import YouMayAlsoLike from "./components/YouMayAlsoLike";
 
 export default function SymbolPage() {
   const params = useParams();
@@ -65,6 +66,8 @@ export default function SymbolPage() {
           <TrendingCoins />
         </div>
       </div>
+      <YouMayAlsoLike />
+      <div className={styles.space}></div>
     </MaxWidthContainer>
   );
 }

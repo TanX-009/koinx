@@ -1,0 +1,5 @@
+.widget {
+  height: 10rem;
+  aspect-ratio: 2/1;
+  pointer-events: none;
+}

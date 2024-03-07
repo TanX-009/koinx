@@ -18,6 +18,10 @@
   gap: var(--space-2xs);
 }
 
+.space {
+  height: var(--space-m);
+}
+
 @media (max-width: 800px) {
   .symbolPage {
     flex-direction: column;

@@ -35,7 +35,6 @@ export default function TrendingCoins() {
       setGeckoTrending,
     );
   }, []);
-  console.log(geckoTrending);
 
   // loading
   if (geckoTrending === null) {
