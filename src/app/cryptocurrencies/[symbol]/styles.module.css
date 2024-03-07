@@ -5,6 +5,10 @@
 
 .main {
   width: calc(75% - var(--space-s));
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
 }
 
 .promo {

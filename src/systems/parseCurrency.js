@@ -1,4 +1,4 @@
-export default function parseCurrency(raw, currency) {
+export default function parseCurrency(raw, currency = "INR") {
   // Create our number formatter.
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",

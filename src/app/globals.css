@@ -24,9 +24,10 @@
   --red-light: #fdebe8;
   --red-dark: #e96975;
   --grey-light: #dee1e6;
+  --grey-dark: #dee1e6;
 
   --bg-light: #fff;
-  --bg-light-a: #e4e3e7;
+  --bg-light-a: #eff2f5;
   --bg-hl: #768396;
 
   --txt-light: #fff;
@@ -36,6 +37,15 @@
   --shadow: #1026490f;
 
   --hi-c-grad-1: linear-gradient(81.62deg, #2870ea 8.72%, #1b4aef 85.01%);
+  --high-low-grad: linear-gradient(
+    90deg,
+    #ff4949 0%,
+    #ff4e11 15.34%,
+    #fc870a 30.45%,
+    #ffaf11 48.68%,
+    #c2cb21 62.75%,
+    #11eb68 100.03%
+  );
 
   --max-width: 1440px;
 

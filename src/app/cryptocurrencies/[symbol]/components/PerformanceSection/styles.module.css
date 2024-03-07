@@ -1,0 +1,27 @@
+.fundamentalsTitle {
+  width: 100%;
+  margin-top: var(--space-xs);
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-5xs);
+
+  color: var(--txt-mid);
+}
+
+.fundamentals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--space-s);
+}
+
+.fundamentals > div {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .fundamentals {
+    flex-direction: column;
+  }
+}

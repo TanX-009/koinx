@@ -1,0 +1,16 @@
+.detail {
+  padding: var(--space-xs) var(--space-2xs);
+
+  border-bottom: 0.1rem solid var(--grey-light);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  text-align: left;
+}
+
+.value {
+  text-align: right;
+}

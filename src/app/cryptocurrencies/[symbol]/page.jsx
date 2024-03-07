@@ -9,6 +9,7 @@ import GetStarted from "./components/GetStarted";
 import TrendingCoins from "./components/TrendingCoins";
 import styles from "./styles.module.css";
 import AboutSymbol from "./components/AboutSymbol";
+import PerformanceSection from "./components/PerformanceSection";
 
 export default function SymbolPage() {
   const params = useParams();
@@ -47,6 +48,8 @@ export default function SymbolPage() {
       <div className={styles.symbolPage}>
         <div className={styles.main}>
           <AboutSymbol geckoData={geckoData} />
+          <PerformanceSection geckoData={geckoData} />
+          <div></div>
         </div>
 
         <div className={styles.promo}>
