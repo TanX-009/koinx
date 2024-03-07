@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
-import Link from "@/app/components/clickables/Link";
-import Button from "@/app/components/clickables/Button";
+import Link from "@/components/clickables/Link";
+import Button from "@/components/clickables/Button";
 import styles from "./styles.module.css";
 
 export default function Hamburger() {

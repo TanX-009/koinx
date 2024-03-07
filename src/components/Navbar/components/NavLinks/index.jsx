@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
-import Link from "@/app/components/clickables/Link";
-import Button from "@/app/components/clickables/Button";
+import Link from "@/components/clickables/Link";
+import Button from "@/components/clickables/Button";
 
 export default function NavLinks() {
   return (
