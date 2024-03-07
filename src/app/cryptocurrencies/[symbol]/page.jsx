@@ -13,6 +13,7 @@ import PerformanceSection from "./components/PerformanceSection";
 import SentimentSection from "./components/SentimentSection";
 import AboutSymbol from "./components/AboutSymbol";
 import Tokenomics from "./components/Tokenomics";
+import Teams from "./components/Teams";
 
 export default function SymbolPage() {
   const params = useParams();
@@ -55,6 +56,7 @@ export default function SymbolPage() {
           <SentimentSection />
           <AboutSymbol geckoData={geckoData} />
           <Tokenomics />
+          <Teams />
           <div></div>
         </div>
 

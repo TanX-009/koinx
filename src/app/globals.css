@@ -129,7 +129,7 @@ body > .rootContainer {
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
-  width: var(--space-5xs);
+  width: var(--space-3xs);
 }
 
 /* Track */
