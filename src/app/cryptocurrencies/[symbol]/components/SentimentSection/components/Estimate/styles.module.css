@@ -1,5 +1,5 @@
 .estimate {
-  padding: var(--space-s);
+  padding: var(--space-s) 0;
 
   display: flex;
   align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .buyCircle {
-  padding: var(--space-m);
+  padding: var(--space-s-m);
 
   font-size: var(--step-4);
 
