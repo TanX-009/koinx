@@ -3,7 +3,7 @@
   padding: var(--space-xs) var(--space-s);
   aspect-ratio: 7/4;
 
-  overflow-x: hidden;
+  overflow: hidden;
 
   border: var(--space-6xs) solid var(--grey-light);
   border-radius: var(--radius);
