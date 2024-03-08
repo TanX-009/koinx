@@ -21,7 +21,7 @@
 }
 
 .imgContainer {
-  height: var(--space-3xl);
+  height: calc(var(--space-l) * 4);
   aspect-ratio: 1/1;
   position: relative;
 }

@@ -5,7 +5,7 @@
 }
 
 .imgContainer {
-  height: 9rem;
+  height: calc(var(--space-m) * 6);
   width: fit-content;
   max-width: 100%;
   aspect-ratio: 417/179;

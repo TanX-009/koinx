@@ -1,5 +1,5 @@
 .cardContainer {
-  height: 7.5rem;
+  height: calc(var(--space-m) * 4);
   aspect-ratio: 8/3;
 
   display: flex;

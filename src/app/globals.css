@@ -135,13 +135,11 @@ body > .rootContainer {
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--pri-light);
-  /* border-radius: 0.4rem; */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #2870ea;
-  /* border-radius: 0.3rem; */
 }
 
 /* Handle on hover */

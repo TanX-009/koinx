@@ -1,6 +1,6 @@
 .infoCard {
   padding: var(--space-2xs) 0;
-  height: 9rem;
+  height: calc(var(--space-m) * 5);
   aspect-ratio: 7/3;
   overflow-y: auto;
 

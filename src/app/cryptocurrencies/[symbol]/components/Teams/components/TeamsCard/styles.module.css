@@ -17,7 +17,7 @@
 }
 
 .imgContainer {
-  height: 7rem;
+  height: calc(var(--space-m) * 4);
   margin-bottom: var(--space-3xs);
 
   aspect-ratio: 1/1;
