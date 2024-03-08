@@ -10,7 +10,7 @@
   gap: var(--space-3xs);
 
   border-radius: var(--radius);
-  outline: none;
+  /* outline: none; */
   border: none;
 
   background: var(--bg-light);

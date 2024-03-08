@@ -86,10 +86,6 @@ export default function Scroller({ children }) {
           const distance = element.clientWidth;
           const scrollWidth = element.scrollWidth;
 
-          console.log(
-            Math.ceil(element.scrollLeft),
-            scrollWidth - distance - 5,
-          );
           if (distance >= scrollWidth) {
             setExtremeState("smaller");
           } else {
