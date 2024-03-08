@@ -11,8 +11,6 @@ export default function SparklineCard({ coin }) {
       (coin.data.price_change_percentage_24h.usd + Number.EPSILON) * 100,
     ) / 100;
 
-  console.log(coin);
-
   return (
     <Link.LowContrast href={`/cryptocurrencies/${coin.id}`}>
       <div className={styles.widget}>
