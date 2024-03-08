@@ -23,7 +23,7 @@ function sideScroll(element, direction, speed, step, setExtremeState) {
         setExtremeState("smaller");
       } else {
         if (element.scrollLeft === 0) setExtremeState("left");
-        else if (element.scrollLeft === scrollWidth - distance) {
+        else if (Math.ceil(element.scrollLeft) > scrollWidth - distance - 5) {
           setExtremeState("right");
         } else setExtremeState("scrolling");
       }
@@ -70,7 +70,7 @@ export default function Scroller({ children }) {
       setExtremeState("smaller");
     } else {
       if (element.scrollLeft === 0) setExtremeState("left");
-      else if (element.scrollLeft === scrollWidth - distance) {
+      else if (Math.ceil(element.scrollLeft) > scrollWidth - distance - 5) {
         setExtremeState("right");
       } else setExtremeState("scrolling");
     }
@@ -86,11 +86,18 @@ export default function Scroller({ children }) {
           const distance = element.clientWidth;
           const scrollWidth = element.scrollWidth;
 
+          console.log(
+            Math.ceil(element.scrollLeft),
+            scrollWidth - distance - 5,
+          );
           if (distance >= scrollWidth) {
             setExtremeState("smaller");
           } else {
             if (element.scrollLeft === 0) setExtremeState("left");
-            else if (element.scrollLeft === scrollWidth - distance) {
+            else if (
+              Math.ceil(element.scrollLeft) >
+              scrollWidth - distance - 5
+            ) {
               setExtremeState("right");
             } else setExtremeState("scrolling");
           }

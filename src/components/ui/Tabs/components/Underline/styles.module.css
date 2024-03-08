@@ -18,9 +18,13 @@
 .active,
 .inactive {
   padding: var(--space-6xs) var(--space-4xs);
+
+  text-wrap: nowrap;
+
   border-radius: var(--radius) var(--radius) 0 0;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .active {
