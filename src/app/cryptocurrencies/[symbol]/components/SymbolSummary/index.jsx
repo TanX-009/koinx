@@ -1,6 +1,6 @@
 import Panel from "@/components/background/Panel";
 import React, { useState } from "react";
-import SymbolLogo from "./components/SymbolLogo";
+import SymbolLogo from "@/components/misc/SymbolLogo";
 import styles from "./styles.module.css";
 import parseCurrency from "@/systems/parseCurrency";
 import BrLine from "@/components/ui/BrLine";

@@ -3,8 +3,8 @@ import Scroller from "@/systems/ui/Scroller";
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import { getData } from "@/systems/getData";
-import TradingViewWidgetMini from "./components/TradingViewWidgetMini";
 import Link from "@/components/clickables/Link";
+import SparklineCard from "./components/SparklineCard";
 
 export default function YouMayAlsoLike() {
   const [geckoTrending, setGeckoTrending] = useState(null);
@@ -27,12 +27,7 @@ export default function YouMayAlsoLike() {
         <h3>You May Also Like</h3>
         <Scroller>
           {geckoTrending.coins.map((coin, key) => (
-            <Link.LowContrast
-              key={key}
-              href={`/cryptocurrencies/${coin.item.id}`}
-            >
-              <TradingViewWidgetMini symbol={coin.item.symbol} />
-            </Link.LowContrast>
+            <SparklineCard key={key} coin={coin.item} />
           ))}
         </Scroller>
       </div>

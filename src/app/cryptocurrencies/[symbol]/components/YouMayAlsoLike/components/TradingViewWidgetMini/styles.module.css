@@ -1,5 +1,0 @@
-.widget {
-  height: calc(var(--space-l) * 4);
-  aspect-ratio: 2/1;
-  pointer-events: none;
-}
