@@ -14,15 +14,22 @@ export default function HighLow({
 }) {
   const bar = useRef(null);
   const arrow = useRef(null);
+  const triangle = useRef(null);
+
   const [leftDistance, setLeftDistance] = useState(0);
+  const [leftTriangleDistance, setLeftTriangleDistance] = useState(0);
 
   useEffect(() => {
-    if (current && bar) {
+    if (current && bar && arrow) {
       const percentagePosition = (currentRaw - lowRaw) / (highRaw - lowRaw);
       const dist = percentagePosition * bar.current.clientWidth;
-      setLeftDistance(dist);
+      const trangleDist =
+        percentagePosition * arrow.current.clientWidth -
+        percentagePosition * triangle.current.clientWidth;
+      setLeftDistance(Math.floor(dist));
+      setLeftTriangleDistance(Math.floor(trangleDist));
     }
-  }, [bar]);
+  }, [bar, arrow, currentRaw, lowRaw, highRaw]);
 
   return (
     <div className={styles.highLow}>
@@ -39,11 +46,19 @@ export default function HighLow({
             style={{
               paddingLeft: `${
                 arrow?.current?.clientWidth &&
-                leftDistance - arrow.current.clientWidth / 2
+                leftDistance - leftTriangleDistance
               }px`,
             }}
           >
-            <GoTriangleUp />
+            <div
+              ref={triangle}
+              style={{
+                paddingLeft: `${leftTriangleDistance}px`,
+                width: "fit-content",
+              }}
+            >
+              <GoTriangleUp />
+            </div>
             {current}
           </div>
         )}

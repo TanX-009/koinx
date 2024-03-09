@@ -108,6 +108,17 @@ export default function PerformanceSection({ geckoData }) {
             )}
           />
 
+          <HighLow
+            lowTitle={"Today's Low"}
+            highTitle={"Today's High"}
+            low={1000}
+            high={3000}
+            lowRaw={1000}
+            highRaw={3000}
+            current={3000}
+            currentRaw={3000}
+          />
+
           <Sub3Title>
             Fundamentals <IoIosInformationCircle />
           </Sub3Title>
