@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import BrLine from "@/components/ui/BrLine";
 import Scroller from "@/systems/ui/Scroller";
 import CheckCard from "./components/CheckCard";
+import InnerHTML from "@/systems/ui/InnerHTML";
 
 export default function AboutSymbol({ geckoData }) {
   return (
@@ -11,7 +12,9 @@ export default function AboutSymbol({ geckoData }) {
       <div className={styles.aboutSymbol}>
         <h3>About {geckoData.name}</h3>
         <h4>What is {geckoData.name}?</h4>
-        <p>{geckoData.description.en}</p>
+        <p>
+          <InnerHTML>{geckoData.description.en}</InnerHTML>
+        </p>
         <h4>Lorem ipsum dolor sit amet</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur. Aliquam placerat sit lobortis

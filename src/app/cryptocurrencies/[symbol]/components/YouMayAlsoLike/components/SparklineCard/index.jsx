@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "@/components/clickables/Link";
 import SymbolLogo from "@/components/misc/SymbolLogo";
 import Change from "@/components/ui/Change";
+import InnerHTML from "@/systems/ui/InnerHTML";
 
 export default function SparklineCard({ coin }) {
   const value =
@@ -24,7 +25,9 @@ export default function SparklineCard({ coin }) {
               <Change.Low>{value}%</Change.Low>
             )}
           </div>
-          <div className={styles.price}>{coin.data.price}</div>
+          <div className={styles.price}>
+            <InnerHTML>{coin.data.price}</InnerHTML>
+          </div>
         </div>
         <div className={styles.imgContainer}>
           <Image src={coin.data.sparkline} alt={coin.symbol} fill />
