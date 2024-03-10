@@ -19,11 +19,7 @@ export default function SparklineCard({ coin }) {
           <div className={styles.title}>
             <SymbolLogo link={coin.small} name={coin.name} />
             <p>{coin.symbol}</p>
-            {value > 0 ? (
-              <Change.High>{value}%</Change.High>
-            ) : (
-              <Change.Low>{value}%</Change.Low>
-            )}
+            <Change value={value} postfix="%" prefix={false} />
           </div>
           <div className={styles.price}>
             <InnerHTML>{coin.data.price}</InnerHTML>

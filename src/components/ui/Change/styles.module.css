@@ -11,12 +11,22 @@
   gap: var(--space-6xs);
 }
 
-.high {
+.high.bg {
   background: var(--green-light);
   color: var(--green-dark);
 }
 
-.low {
+.high.fg {
+  background: none;
+  color: var(--green-dark);
+}
+
+.low.bg {
   background: var(--red-light);
+  color: var(--red-dark);
+}
+
+.low.fg {
+  background: none;
   color: var(--red-dark);
 }

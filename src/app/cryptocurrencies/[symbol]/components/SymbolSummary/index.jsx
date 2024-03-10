@@ -25,15 +25,10 @@ export default function SymbolSummary({ geckoData }) {
           <h2>
             {parseCurrency(geckoData.market_data.current_price.usd, "USD")}{" "}
             <span className={styles.change}>
-              {geckoData.market_data.market_cap_change_percentage_24h > 0 ? (
-                <Change.High>
-                  {geckoData.market_data.market_cap_change_percentage_24h}%
-                </Change.High>
-              ) : (
-                <Change.Low>
-                  {geckoData.market_data.market_cap_change_percentage_24h}%
-                </Change.Low>
-              )}
+              <Change
+                value={geckoData.market_data.market_cap_change_percentage_24h}
+                postfix={"%"}
+              />
               <span className={styles.capChangeDuration}>(24H)</span>
             </span>
           </h2>

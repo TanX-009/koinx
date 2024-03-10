@@ -9,8 +9,21 @@
   width: 100%;
 }
 
+.allTime {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* gap: var(--space-5xs); */
+}
+
 @media (max-width: 800px) {
   .fundamentals {
     flex-direction: column;
+    gap: 0;
+  }
+
+  .reverseOnMobile {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
