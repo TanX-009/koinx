@@ -14,14 +14,14 @@ export default function calculateAge(isoDate) {
 
   if (months > 0) {
     if (result !== "") {
-      result += " and ";
+      result += ", ";
     }
     result += months + (months === 1 ? " month" : " months");
   }
 
   if (days > 0) {
     if (result !== "") {
-      result += " and ";
+      result += ", ";
     }
     result += days + (days === 1 ? " day" : " days");
   }

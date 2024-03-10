@@ -29,8 +29,6 @@ export default function SymbolPage() {
     );
   }, []);
 
-  console.log(geckoData);
-
   // loading
   if (geckoData === null) {
     return (
