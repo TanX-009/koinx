@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, memo } from "react";
+import React from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
 import Link from "@/components/clickables/Link";

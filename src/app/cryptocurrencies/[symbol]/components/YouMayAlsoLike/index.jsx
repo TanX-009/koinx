@@ -3,7 +3,6 @@ import Scroller from "@/systems/ui/Scroller";
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import { getData } from "@/systems/getData";
-import Link from "@/components/clickables/Link";
 import SparklineCard from "./components/SparklineCard";
 
 export default function YouMayAlsoLike() {

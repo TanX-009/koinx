@@ -1,20 +1,21 @@
 "use client";
 
+import React from "react";
 import Panel from "@/components/background/Panel";
 import MaxWidthContainer from "@/components/misc/MaxWidthContainer";
 import { getData } from "@/systems/getData";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import AboutSymbol from "./components/AboutSymbol";
 import GetStarted from "./components/GetStarted";
-import TrendingCoins from "./components/TrendingCoins";
-import styles from "./styles.module.css";
-import SymbolSummary from "./components/SymbolSummary";
 import PerformanceSection from "./components/PerformanceSection";
 import SentimentSection from "./components/SentimentSection";
-import AboutSymbol from "./components/AboutSymbol";
-import Tokenomics from "./components/Tokenomics";
+import SymbolSummary from "./components/SymbolSummary";
 import Teams from "./components/Teams";
+import Tokenomics from "./components/Tokenomics";
+import TrendingCoins from "./components/TrendingCoins";
 import YouMayAlsoLike from "./components/YouMayAlsoLike";
+import styles from "./styles.module.css";
 
 export default function SymbolPage() {
   const params = useParams();
@@ -27,7 +28,7 @@ export default function SymbolPage() {
       `https://api.coingecko.com/api/v3/coins/${symbol}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false`,
       setGeckoData,
     );
-  }, []);
+  }, [symbol]);
 
   // loading
   if (geckoData === null) {
