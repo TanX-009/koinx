@@ -10,15 +10,7 @@ export default function Tokenomics() {
         <h3>Tokenomics</h3>
         <h4>Initial Distribution</h4>
         <div className={styles.imgContainer}>
-          <Image
-            src={"/images/distribution.svg"}
-            alt="Distribution"
-            fill
-            sizes="(max-width: 1920px) 19.7917vw, (max-width: 1280px) 29.6875vw, (max-width: 980
-px) 38.7755vw, (max-width: 800px) 47.5000vw, (max-width: 640px) 59.3750vw, (max-widt
-h: 460px) 82.6087vw, (max-width: 360px) 83.3333vw, (max-width: 300px) 76.6667vw, 41.
-6914vw"
-          />
+          <Image src={"/images/distribution.svg"} alt="Distribution" fill />
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur. Cras aliquet tristique ornare

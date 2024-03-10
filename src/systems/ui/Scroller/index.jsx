@@ -74,7 +74,7 @@ export default function Scroller({ children }) {
         setExtremeState("right");
       } else setExtremeState("scrolling");
     }
-  });
+  }, []);
 
   return (
     <div className={styles.scroller}>

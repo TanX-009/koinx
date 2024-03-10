@@ -49,7 +49,7 @@
     #11eb68 100.03%
   );
 
-  --max-width: 1440px;
+  --max-width: 90em; /* 1440px */
 
   /* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.4|0.3|0.2|0.1,1.5|2|3|4|6,s-l|5xs-2xs&g=s,l,xl,12 */
   --space-6xs: clamp(0.125rem, 0.125rem + 0vi, 0.125rem);

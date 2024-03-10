@@ -4,7 +4,8 @@
   gap: var(--space-l);
 }
 
-@media (max-width: 800px) {
+/* 800px */
+@media (max-width: 50em) {
   .navLinks {
     display: none;
   }

@@ -22,7 +22,8 @@
   height: var(--space-s);
 }
 
-@media (max-width: 800px) {
+/* 800px */
+@media (max-width: 50em) {
   .symbolPage {
     flex-direction: column;
     gap: 0;

@@ -26,7 +26,12 @@ export default function SparklineCard({ coin }) {
           </div>
         </div>
         <div className={styles.imgContainer}>
-          <Image src={coin.data.sparkline} alt={coin.symbol} fill />
+          <Image
+            src={coin.data.sparkline}
+            alt={coin.symbol}
+            fill
+            sizes="(max-width: 30em) 70vw, (max-width: 80em) 40vw, (max-width: 120em) 20vw, 8vw"
+          />
         </div>
       </div>
     </Link.LowContrast>

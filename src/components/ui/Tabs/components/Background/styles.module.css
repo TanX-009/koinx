@@ -15,7 +15,7 @@
 
 .active,
 .inactive {
-  padding: var(--space-6xs) var(--space-4xs);
+  padding: var(--space-5xs) var(--space-3xs);
 
   text-wrap: nowrap;
 

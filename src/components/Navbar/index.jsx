@@ -10,7 +10,7 @@ export default function Navbar() {
     <div className={styles.navbar}>
       <div className={styles.navbarContainer}>
         <Link.LowContrast href={"/"}>
-          <KoinXLogo.TypeA />
+          <KoinXLogo.TypeA priority={true} />
         </Link.LowContrast>
         <NavLinks />
         <Hamburger />

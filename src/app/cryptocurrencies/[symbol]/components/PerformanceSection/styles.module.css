@@ -16,7 +16,8 @@
   /* gap: var(--space-5xs); */
 }
 
-@media (max-width: 800px) {
+/* 800px */
+@media (max-width: 50em) {
   .fundamentals {
     flex-direction: column;
     gap: 0;

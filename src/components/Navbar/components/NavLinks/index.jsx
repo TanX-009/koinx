@@ -6,9 +6,9 @@ import Button from "@/components/clickables/Button";
 export default function NavLinks() {
   return (
     <div className={styles.navLinks}>
-      <Link.LowContrast href="/about">Crypto Taxes</Link.LowContrast>
-      <Link.LowContrast href="/about">Free Tools</Link.LowContrast>
-      <Link.LowContrast href="/about">Resource Center</Link.LowContrast>
+      <Link.LowContrast href="">Crypto Taxes</Link.LowContrast>
+      <Link.LowContrast href="">Free Tools</Link.LowContrast>
+      <Link.LowContrast href="">Resource Center</Link.LowContrast>
       <Button.HighContrast>Get started</Button.HighContrast>
     </div>
   );

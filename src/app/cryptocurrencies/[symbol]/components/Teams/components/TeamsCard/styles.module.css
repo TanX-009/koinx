@@ -30,7 +30,8 @@
   object-fit: cover;
 }
 
-@media (max-width: 800px) {
+/* 800px */
+@media (max-width: 50em) {
   .teamsCard {
     flex-direction: column;
   }

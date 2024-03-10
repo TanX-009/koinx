@@ -10,7 +10,7 @@ export default function TypeA({ size = "", priority = false }) {
         alt="KoinX"
         priority={priority}
         fill
-        sizes="(max-width: 1920px) 7.0312vw, (max-width: 1280px) 10.5469vw, (max-width: 540px) 24.0741vw, (max-width: 800px) 16.2500vw, (max-width: 1024px) 13.1836vw, 11.9518vw"
+        sizes="(max-width: 30em) 60vw, (max-width: 80em) 20vw, (max-width: 120em) 10vw, 18vw"
       />
     </div>
   );
