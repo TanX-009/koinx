@@ -1,6 +1,6 @@
 .infoCard {
   padding: var(--space-2xs) 0;
-  height: calc(var(--space-m) * 5);
+  height: calc(var(--space-l) * 4);
   aspect-ratio: 7/3;
   overflow-y: auto;
 
@@ -9,8 +9,9 @@
 }
 
 .icon {
+  font-size: var(--step-1);
   padding: var(--space-2xs);
-  height: fit-content;
+  height: calc(1em + var(--space-2xs) * 2);
   aspect-ratio: 1/1;
 
   border-radius: 50%;
