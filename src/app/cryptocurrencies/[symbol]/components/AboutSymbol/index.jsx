@@ -11,9 +11,9 @@ export default function AboutSymbol({ geckoData }) {
     <Panel>
       <div className={styles.aboutSymbol}>
         <h3>About {geckoData.name}</h3>
-        <h4>What is {geckoData.name}?</h4>
+        {geckoData.description.en && <h4>What is {geckoData.name}?</h4>}
         <p>
-          <InnerHTML>{geckoData.description.en}</InnerHTML>
+          <InnerHTML>{geckoData.description.en || ""}</InnerHTML>
         </p>
         <h4>Lorem ipsum dolor sit amet</h4>
         <p>
