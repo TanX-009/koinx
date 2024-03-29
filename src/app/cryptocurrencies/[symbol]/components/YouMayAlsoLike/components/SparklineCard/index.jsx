@@ -5,12 +5,15 @@ import Link from "@/components/clickables/Link";
 import SymbolLogo from "@/components/misc/SymbolLogo";
 import Change from "@/components/ui/Change";
 import InnerHTML from "@/systems/ui/InnerHTML";
+import parseCurrency from "@/systems/parseCurrency";
 
 export default function SparklineCard({ coin }) {
   const value =
     Math.round(
       (coin.data.price_change_percentage_24h.usd + Number.EPSILON) * 100,
     ) / 100;
+
+  console.log(coin);
 
   return (
     <Link.LowContrast href={`/cryptocurrencies/${coin.id}`}>
@@ -22,7 +25,7 @@ export default function SparklineCard({ coin }) {
             <Change value={value} postfix="%" prefix={false} />
           </div>
           <div className={styles.price}>
-            <InnerHTML>{coin.data.price}</InnerHTML>
+            <p>{parseCurrency(coin.data.price, "USD")}</p>
           </div>
         </div>
         <div className={styles.imgContainer}>
