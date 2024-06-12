@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "assets.coingecko.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "coin-images.coingecko.com",
+        port: "",
+      },
     ],
   },
 };
